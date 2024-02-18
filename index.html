@@ -4,6 +4,12 @@
     <head>
         <title>Calculator</title>
         <style>
+            @font-face {
+                font-family: 'DS-Digital Normal';
+                font-style: normal;
+                font-weight: normal;
+                src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+                }
             .calculator-container{
                 height:750px;
                 width:450px;
@@ -21,6 +27,7 @@
                 color:white;
                 background-color:black;
                 border:none;
+                font-family: DS-Digital Normal;
             }
             .button-field{
                 height:460px;
@@ -84,7 +91,7 @@
     </head>
     <body>
         <div class="calculator-container">
-            <input class="input-field" type="text"value=0>
+            <input class="input-field" type="text" value=0>
             <div class="button-field">
                 <button class="btn clr">AC</button>
                 <button class="btn clr">+/-</button>
